@@ -1,0 +1,15 @@
+{
+  "name": "news-api-proxy",
+  "version": "0.0.0",
+  "devDependencies": {
+    "@cloudflare/workers-types": "^3.16.0",
+    "typescript": "^4.8.3",
+    "wrangler": "2.0.25"
+  },
+  "private": true,
+  "scripts": {
+    "dev": "wrangler dev --local",
+    "start": "wrangler dev",
+    "deploy": "wrangler publish"
+  }
+}
