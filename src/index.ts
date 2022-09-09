@@ -39,6 +39,7 @@ export default {
 				})
 				request.headers.set('Origin', apiUrl.origin)
 				request.headers.set('Authorization', env.API_KEY)
+				request.headers.set('User-Agent', "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36")
 
 				let response = await fetch(request)
 				response = new Response(response.body, response)
